@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+input[type=file] {
+    text-indent: -136px;
+    max-width: 187px;
+  }
+
+*{
+    box-sizing: border-box; 
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+html{
+    font-family: 'Crimson Text', serif;
+    font-size: 100%;
+    color: black;
+    line-height: 1.25;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #f5dea3, #42e6a4, #02a8a8, #018383);
+    padding: 25px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.logo{
+    width: 90px;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 3px 15px;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+.boxButtons{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+
+.boxButtons .btn{
+    margin: 10px;
+}
+
+.btn.primary{
+    background-color: mediumaquamarine;
+}

@@ -1,0 +1,21 @@
+
+
+td p{
+    margin: 15px;
+}
+
+tr{
+    border: 2px;
+}
+
+table img {
+    max-width: 100px;
+    max-height: 150px;
+}
+
+table td {
+    text-align: center;
+    padding: 5px 25px;
+}
+
+

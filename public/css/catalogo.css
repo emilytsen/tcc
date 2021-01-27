@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-align: inherit;
+
+}
+
+body{
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 10px lightgrey;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    background-color: #ffffffe8;
+    z-index: 10;
+}
+
+header > * {
+    margin: 5px 10px;
+}
+
+header .logo{
+    width: 70px;
+}
+
+header .icon{
+    height: 25px;
+}
+
+.banner{
+    height: 444px;
+    background-size: cover;
+    background-position: 0 -17px;
+}
+
+.banner .filtro{
+    background-color: #ffffff33;
+    width: 100%;
+    height: 100%;
+}
+
+.banner h1{
+    margin: auto;
+    width: max-content;
+    margin-top: -200px;
+    color: white;
+    font-size: 270%;
+    font-weight: normal;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+form img{
+    width: 20px;
+}
+
+form button{
+    background-color: transparent;
+    border: none;
+    margin-left: -32px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+#barraBusca {
+flex-grow: 1;
+border: none;
+border-bottom: 1px solid;
+padding: 10px 0;
+outline: none;
+background-color: transparent;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: thistle;
+}
+
+#conteudo{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.boxProduto{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: lightseagreen;
+    margin: 35px 40px;
+    box-shadow: 6px 6px 10px -5px black;
+    border-radius: 5px;
+    align-items: center;
+    
+}
+
+.carousel {
+    height: 230px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 15px;
+
+}
+
+.boxProduto .flexSliderBody{
+    max-width: 200px;
+}
+
+.boxProduto .flexSliderBtnBack,
+.boxProduto .flexSliderBtnNext{
+    background-color: transparent;
+    color: black;
+    border: none;
+    transform: scale(1.5);
+}
+
+.boxProduto .flexSliderBtnBack{
+    left: 0;
+}
+
+.boxProduto .flexSliderBtnNext{
+    right: 0;
+}
+
+.boxProduto h3{
+    margin: 10px
+}
+
+.boxProduto p{
+    margin: 0;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}

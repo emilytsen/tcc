@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #f5dea3, #42e6a4, #02a8a8, #018383);
+    animation: colors 15s ease infinite;
+    
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 0 0 10px;
+    background-color: revert;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: cornsilk;
+
+}
+
+form img{
+    width: 60px;
+    margin-bottom: -6%;
+}
+
+form h1{
+    font-size: x-large;
+
+}
+
+form input{
+    margin: 5px;
+   text-align: center;
+   padding: 6px;
+   border-radius: 7px;
+   font-family: 'Crimson Text', serif;
+   background-color: cornsilk;
+}
+
+form button{
+    margin: 15px;
+    background-color: mediumaquamarine;
+    padding: 7px;
+}
+
+form a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+}

@@ -1,0 +1,95 @@
+.flexSlider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexSliderBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.flexSliderBody > *:not(a),
+.flexSliderBody a > * {
+    min-width: 100%;
+}
+
+.flexSliderBody > img,
+.flexSliderBody a > * {
+    width: 100%;
+}
+
+.flexSliderBody > a {
+    display: contents;
+}
+
+.flexSliderBtnBack,
+.flexSliderBtnNext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid #FFF;
+    border-radius: 40px;
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - 15px);
+    color: #FFF;
+    font-size: 24pt;
+    font-family: monospace;
+    padding: 0;
+    user-select: none;
+    transition: 0.25s;
+    z-index: 2;
+    transform-origin: center;
+}
+
+.flexSliderBtnBack:active,
+.flexSliderBtnNext:active {
+    transform: scale(0.9);
+}
+
+.flexSliderBtnBack {
+    left: 20px;
+}
+
+.flexSliderBtnNext {
+    right: 20px;
+}
+
+.flexSliderDots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.flexSliderDots .dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FFF;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.flexSliderDots .dot.active {
+    background-color: #FFF;
+}
